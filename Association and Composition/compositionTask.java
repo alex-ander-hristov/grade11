@@ -4,7 +4,7 @@ public class compositionTask {
         Engine engine1 = new Engine("V8");
         // Task 5: Create an Engine object with a type of "V8".
     Car car1 = new Car("Ford", engine1, 18);
-        // Task 6: Create a Car object with the brand "Ford", the Engine object, and wheel size of 18 inches.
+        // Task 6: Create a Car object with the brand "Ford", the Engine object, and wheel size of 18 cm.
 car1.displayInfo();
         // Task 7: Call the displayInfo() method to print the car's details.
     }
