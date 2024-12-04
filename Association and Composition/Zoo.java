@@ -30,7 +30,7 @@ class Animal {
    private String name;
    private String species;
    private int age;
-   private Habitat habitat;
+   private Habitat habitat; //composition - Animal 
 
 
 
@@ -39,7 +39,7 @@ class Animal {
        this.name = name;
        this.species = species;
        this.age = age;
-       this.habitat = habitat;
+       this.habitat = habitat; //composition - Animal
 
 
    }
@@ -103,22 +103,22 @@ class Zoo {
 
 
    void addAnimal1(String name, String species, int age, Habitat habitat) {
-       a1 = new Animal(name, species, age, habitat);
+       a1 = new Animal(name, species, age, habitat); //association - Zoo
    }
 
 
    void addAnimal2(String name, String species, int age, Habitat habitat) {
-       a2 = new Animal(name, species, age, habitat);
+       a2 = new Animal(name, species, age, habitat); //association - Zoo
    }
 
 
    void addAnimal3(String name, String species, int age, Habitat habitat) {
-       a3 = new Animal(name, species, age, habitat);
+       a3 = new Animal(name, species, age, habitat); //association - Zoo
    }
 
 
    void addAnimal4(String name, String species, int age, Habitat habitat) {
-       a4 = new Animal(name, species, age, habitat);
+       a4 = new Animal(name, species, age, habitat); //association - Zoo
    }
 }
 
@@ -126,7 +126,7 @@ class Zoo {
    class Staff {
        private String name;
        private String role;
-       private Habitat assignedHabitat;
+       private Habitat assignedHabitat; //Composition - Staff to Habitat
 
 
 
@@ -134,7 +134,7 @@ class Zoo {
        public Staff(String name, String role, Habitat assignedHabitat) {
            this.name = name;
            this.role = role;
-           this.assignedHabitat = assignedHabitat;
+           this.assignedHabitat = assignedHabitat; //Composition - Staff to Habitat
        }
 
 
