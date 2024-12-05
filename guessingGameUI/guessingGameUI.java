@@ -62,7 +62,7 @@ public class guessingGameUI {
 
                     if (guess < randomNumber) {
                         resultLabel.setText("Your guess is too low! Attempts: " + attempts);
-                    } else if (guess > randomNumber) {
+                    } if (guess > randomNumber) {
                         resultLabel.setText("Your guess is too high! Attempts: " + attempts);
                     } else {
                         resultLabel.setText("Congratulations! You guessed the number in " + attempts + " attempts.");
@@ -73,7 +73,7 @@ public class guessingGameUI {
                 guessField.setText("");
             }
         });
-        
+
         quitButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 resultLabel.setText("The secret number was: " + randomNumber);
