@@ -43,7 +43,7 @@ class Product {
 
 
 class Inventory {
-    private Product[] products = new Product[10];
+    private Product[] products = new Product[3];
     private int productCount = 0;
 
 
