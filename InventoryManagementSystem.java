@@ -48,7 +48,7 @@ class Inventory {
 
 
     public boolean addProduct(String name, double price, int quantity) {
-        if (productCount < 10) {
+        if (productCount < 3) {
             products[productCount] = new Product(name, price, quantity);
             productCount++;
             return true;
