@@ -173,7 +173,8 @@ public class InventoryManagementSystem {
 
 
         addButton.addActionListener(new ActionListener() {
-            @Override
+
+        
             public void actionPerformed(ActionEvent e) {
                 String name = nameField.getText();
                 double price;
@@ -194,7 +195,8 @@ public class InventoryManagementSystem {
 
 
         updateButton.addActionListener(new ActionListener() {
-            @Override
+
+            
             public void actionPerformed(ActionEvent e) {
                 String name = nameField.getText();
                 double price;
@@ -215,7 +217,8 @@ public class InventoryManagementSystem {
 
 
         displayButton.addActionListener(new ActionListener() {
-            @Override
+
+            
             public void actionPerformed(ActionEvent e) {
                 displayArea.setText(inventory.displayAllProducts());
             }
