@@ -22,16 +22,16 @@ public class VerndingMachineWithArrays {
             if (quantities[itemIndex] > 0) {
                 System.out.println("You selected " + items[itemIndex] + ". The price is $" + prices[itemIndex]);
                 System.out.print("Insert money: ");
-            } else {
-                System.out.println(items[itemIndex] + " is out of stock");}
-
+                
             double insertedMoney = scan.nextDouble();
             if (insertedMoney >= prices[itemIndex]) {
                 double change = insertedMoney - prices[itemIndex];
                 System.out.println("Purchase successful! Your change: " + change);
                 quantities[itemIndex]--;
             } else {
-                System.out.println("Insufficient funds"); }
+                System.out.println("Insufficient funds"); }            
+            } else {
+                System.out.println(items[itemIndex] + " is out of stock");}
 
             } else {
                 System.out.println("Invalid choice. Please enter valid item code (1-4)"); }
