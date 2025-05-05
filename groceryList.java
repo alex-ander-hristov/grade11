@@ -5,6 +5,7 @@ public class groceryList {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
+        String path = ("/home/ahristov26/Desktop/"+ name);
         ArrayList<String> groceries = new ArrayList<>();
         
         while (true) {
